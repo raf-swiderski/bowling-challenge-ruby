@@ -1,0 +1,2 @@
+class Total_Score
+end
