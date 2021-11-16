@@ -63,3 +63,22 @@ In the image below you can find some score examples.
 More about ten pin bowling here: http://en.wikipedia.org/wiki/Ten-pin_bowling
 
 ![Ten Pin Score Example](images/example_ten_pin_scoring.png)
+
+
+## User Stories
+
+```
+As a player 
+To see how many pins i knocked down
+I want to see my score for that frame displayed 
+```
+```
+As a player
+To find out my overall score 
+I want see my total score displayed
+```
+```
+As a play 
+So that i can find out if i got a strike
+I want to see the  word 'strike' displayed
+```
