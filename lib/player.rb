@@ -6,7 +6,8 @@ class Player
 
     def initialize 
         @total_score = 0
-        @frame
+        @current_frame
+        @all_frames
     end
 
     def return_total_score
@@ -19,6 +20,10 @@ class Player
 
     def roll
         create_frame
+    end
+
+    def return_current_frame_score
+        @current_frame.frame_score
     end
 
 end
