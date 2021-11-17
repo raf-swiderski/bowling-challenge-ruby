@@ -1,5 +1,6 @@
-class Frame
+require 'randomiser'
 
+class Frame
 
     def initialize
         @score = 0
@@ -8,5 +9,10 @@ class Frame
     def frame_score
         @score
     end 
+
+    def roll_1
+        @randomiser = Randomiser.new
+        @randomiser.pins_knocked_down 
+    end
 
 end

@@ -28,6 +28,10 @@ describe Player do
             expect(@player.return_current_frame_score).to eq 3
 
         end
+
+        it 'calls on the frame object to start the first roll' do
+            
+        end
         
     end
 

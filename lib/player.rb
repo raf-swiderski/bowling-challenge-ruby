@@ -1,4 +1,5 @@
 require 'frame.rb'
+require 'randomiser'
 
 class Player
 
@@ -20,6 +21,7 @@ class Player
 
     def roll
         create_frame
+        @current_frame.roll_1 
     end
 
     def return_current_frame_score
