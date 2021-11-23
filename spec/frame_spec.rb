@@ -12,12 +12,12 @@ describe Frame do
         end
     end
 
-    describe '#roll_1' do
+    describe '#roll' do
 
         it 'generates a random number between once and ten, indicating how many pins are knocked down' do
-            allow(@frame).to receive(:roll_1) { 5 }
+            allow(@frame).to receive(:roll) { 5 }
             
-            expect(@frame.roll_1).to eq 5
+            expect(@frame.roll).to eq 5
 
         end
 

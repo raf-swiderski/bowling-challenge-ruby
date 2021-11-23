@@ -29,10 +29,6 @@ describe Player do
 
         end
 
-        it 'calls on the frame object to start the first roll' do
-            
-        end
-        
     end
 
     describe '#create_frame' do

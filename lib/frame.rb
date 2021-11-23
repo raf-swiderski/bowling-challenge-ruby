@@ -1,4 +1,4 @@
-require 'randomiser'
+# require_relative 'randomiser'
 
 class Frame
 
@@ -10,9 +10,13 @@ class Frame
         @score
     end 
 
-    def roll_1
-        @randomiser = Randomiser.new
-        @randomiser.pins_knocked_down 
+    def roll
+        # @randomiser = Randomiser.new
+        # @randomiser.pins_knocked_down 
+
+        # return 0 if pins_left == 0 
+        @score = rand(11)
+
     end
 
 end
