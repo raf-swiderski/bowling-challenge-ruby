@@ -75,10 +75,10 @@ I want to see my score for that frame displayed
 ```
 As a player
 To find out my overall score 
-I want see my total score displayed
+I want see my total score displayed when i want
 ```
 ```
-As a play 
+As a player
 So that i can find out if i got a strike
 I want to see the  word 'strike' displayed
 ```

@@ -5,6 +5,7 @@ class Frame
     def initialize
         @score = 0
         @pins_left = 10
+        @roll_number = 1
     end
 
     def frame_score
@@ -18,6 +19,6 @@ class Frame
 
     end
 
-    
+
 
 end

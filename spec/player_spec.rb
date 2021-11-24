@@ -29,10 +29,11 @@ describe Player do
 
         end
 
-        it 'adds the current frame score to the total score' do
-            @player.roll
-            expect(@player.return_current_frame_score).to eq @player.return_total_score
-        end
+        # it 'adds the current frame score to the total score when the frame is over' do
+        #     @player.roll
+        #     expect(@player.return_current_frame_score).to eq @player.return_total_score
+        # end
+
 
     end
 

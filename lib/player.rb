@@ -20,7 +20,8 @@ class Player
     def roll
         create_frame
         @current_frame.roll(@current_frame.frame_score)
-        @total_score += @current_frame.frame_score
+        
+        # @total_score += @current_frame.frame_score
     end
 
     def return_current_frame_score
