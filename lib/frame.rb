@@ -13,12 +13,14 @@ class Frame
     end 
 
     def roll(pins_knocked_down = 0)
-
+        @roll_number += 1
         pins_left = @pins_left - pins_knocked_down
         @score = rand(pins_left + 1)
 
     end
 
-
+    def roll_number
+        @roll_number
+    end
 
 end

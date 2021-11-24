@@ -15,7 +15,7 @@ describe Frame do
         it 'knows what roll the player is on, (either 1 or 2) having a default value of 1' do 
             expect(@frame.roll_number).to eq 1
         end
-        
+
     end
 
     describe '#roll' do
@@ -25,6 +25,8 @@ describe Frame do
             expect(@frame.roll).to eq 5
 
         end
+
+        
 
         it 'takes an argument of how many pins are knocked down, for when the player rolls for the 2nd time in the frame' do
             expect(@frame.roll(5)).to be_between(0, 5)

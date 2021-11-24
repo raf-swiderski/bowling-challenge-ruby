@@ -17,9 +17,14 @@ describe Player do
 
     describe '#roll' do
 
-        it 'creates a frame automatically when the roll method is called' do
+        it 'creates a frame automatically' do
             @player.roll
             expect(@player.return_current_frame_score).to be_between(0, 10)
+        end
+
+        it 'doesnt create a frame if the player has already rolled' do
+            @player.roll
+            expect(@player.return_current_roll_number).to eq 2
         end
 
         it 'assigns a random number to @current_frame between 1 & 10 when the #roll method is called for the first time' do
@@ -28,6 +33,8 @@ describe Player do
             expect(@player.return_current_frame_score).to eq 3
 
         end
+
+    
 
         # it 'adds the current frame score to the total score when the frame is over' do
         #     @player.roll
