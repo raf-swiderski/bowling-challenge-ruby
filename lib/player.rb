@@ -3,8 +3,6 @@ require_relative 'frame'
 
 class Player
 
-    attr_reader :current_frame, :all_frames
-
     def initialize 
         @total_score = 0
         @current_frame
@@ -22,6 +20,7 @@ class Player
     def roll
         create_frame
         @current_frame.roll(@current_frame.frame_score)
+        @total_score += @current_frame.frame_score
     end
 
     def return_current_frame_score
