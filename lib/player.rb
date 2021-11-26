@@ -19,12 +19,20 @@ class Player
 
     def roll
         
-        if @current_frame == nil
+        
+        if @current_frame == nil || @current_frame.roll_number == 3
             create_frame
+            @current_frame.roll(@current_frame.frame_score)
+            puts "you knocked down #{return_current_frame_score} pins"
+            return
         end
-        @current_frame.roll(@current_frame.frame_score)
-
-        # @total_score += @current_frame.frame_score
+        
+        if @current_frame.roll_number == 2
+            @current_frame.roll(@current_frame.frame_score)
+            @total_score += @current_frame.frame_score
+            puts "you knocked down #{return_current_frame_score} total pins in this frame"
+        end
+        
     end
 
     def return_current_frame_score
