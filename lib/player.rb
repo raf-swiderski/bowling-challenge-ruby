@@ -5,8 +5,12 @@ class Player
     def initialize 
         @total_score = 0
         @current_frame = nil
-        @all_frames = nil
+        @all_frames = []
     end
+
+    def all_frames
+        @all_frames
+    end    
 
     def return_total_score
         @total_score
@@ -32,6 +36,7 @@ class Player
         if @current_frame.roll_number == 2
             roll_frame_object
             @total_score += @current_frame.frame_score
+            @all_frames << @current_frame.frame_score
             puts "you knocked down #{return_current_frame_score} total pins in this frame"
         end
         
