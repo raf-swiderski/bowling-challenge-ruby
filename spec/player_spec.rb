@@ -45,7 +45,6 @@ describe Player do
     describe '#store_frame' do
 
         it 'stores the recently completed frame into the @all_frames variable' do
-            allow(@player).to receive(:return_current_frame_score) { 10 }
             @player.roll
             @player.roll
             expect(@player.all_frames).to eq [@player.return_current_frame_score]

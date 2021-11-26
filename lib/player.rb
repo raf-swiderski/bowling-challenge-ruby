@@ -36,12 +36,17 @@ class Player
         if @current_frame.roll_number == 2
             roll_frame_object
             @total_score += @current_frame.frame_score
-            @all_frames << @current_frame.frame_score
+            store_frame
             puts "you knocked down #{return_current_frame_score} total pins in this frame"
+            puts "#{@all_frames}"
         end
         
     end
 
+    def store_frame
+        @all_frames << @current_frame.frame_score
+    end
+        
     def return_current_frame_score
         @current_frame.frame_score
     end
